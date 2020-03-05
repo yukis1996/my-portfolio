@@ -1,0 +1,24 @@
+@import "./reset";
+@import "./background";
+$colorimage: blue;
+
+
+div {
+  background: green;
+  h1 {
+    color: $colorimage;
+  }
+  
+  p {
+    color: $colorimage;
+  }
+
+  span {
+    color: red;
+  }
+
+  ul {
+    background: rebeccapurple;
+  }
+}
+
