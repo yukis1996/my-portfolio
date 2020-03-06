@@ -1,24 +1,19 @@
 @import "./reset";
-@import "./background";
-$colorimage: blue;
 
-
-div {
-  background: green;
-  h1 {
-    color: $colorimage;
-  }
-  
-  p {
-    color: $colorimage;
-  }
-
-  span {
-    color: red;
-  }
-
-  ul {
-    background: rebeccapurple;
+@media screen and (min-width: 767px) { /*ウィンドウ幅が767px以上の場合に適用*/
+  .profile {
+  background-color: #00FFFF; /*青色*/
   }
 }
 
+@media screen and (max-width: 767px) { /*ウィンドウ幅が最大767pxまでの場合に適用*/
+  #menu-bg {
+  background-color: #FF0000; /*赤色*/
+  }
+}
+
+@media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
+  .profile {
+  background-color: #00FF00; /*緑色*/
+  }
+}

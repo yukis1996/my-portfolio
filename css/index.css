@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * YUI 3.5.0 - reset.css (http://developer.yahoo.com/yui/3/cssreset/)
  * http://cssreset.com
@@ -140,27 +141,27 @@ legend {
   display: none;
 }
 
-html {
-  background: royalblue;
+@media screen and (min-width: 767px) {
+  /*ウィンドウ幅が767px以上の場合に適用*/
+  .profile {
+    background-color: #00FFFF;
+    /*青色*/
+  }
 }
 
-div {
-  background: green;
+@media screen and (max-width: 767px) {
+  /*ウィンドウ幅が最大767pxまでの場合に適用*/
+  .profile {
+    background-color: #FF0000;
+    /*赤色*/
+  }
 }
 
-div h1 {
-  color: blue;
-}
-
-div p {
-  color: blue;
-}
-
-div span {
-  color: red;
-}
-
-div ul {
-  background: rebeccapurple;
+@media screen and (max-width: 479px) {
+  /*ウィンドウ幅が最大479pxまでの場合に適用*/
+  .profile {
+    background-color: #00FF00;
+    /*緑色*/
+  }
 }
 /*# sourceMappingURL=index.css.map */
