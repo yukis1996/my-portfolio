@@ -141,27 +141,80 @@ legend {
   display: none;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  color: #333333;
+}
+
 @media screen and (min-width: 767px) {
   /*ウィンドウ幅が767px以上の場合に適用*/
-  .profile {
-    background-color: #00FFFF;
-    /*青色*/
+  .heading {
+    height: 64px;
+    background: rgba(255, 255, 255, 0.65);
+  }
+  .heading ul {
+    width: 767px;
+    margin: 0 auto;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .heading ul li {
+    width: 80px;
+    line-height: 64px;
+    margin: 0 8px;
   }
 }
 
 @media screen and (max-width: 767px) {
   /*ウィンドウ幅が最大767pxまでの場合に適用*/
-  .profile {
-    background-color: #FF0000;
-    /*赤色*/
+  .heading {
+    height: 64px;
+    background: rgba(255, 255, 255, 0.65);
+  }
+  .heading ul {
+    margin: 0 auto;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .heading ul li {
+    width: 80px;
+    line-height: 64px;
   }
 }
 
 @media screen and (max-width: 479px) {
   /*ウィンドウ幅が最大479pxまでの場合に適用*/
-  .profile {
-    background-color: #00FF00;
-    /*緑色*/
+  .heading {
+    height: 64px;
+    background: rgba(255, 255, 255, 0.65);
+  }
+  .heading ul {
+    margin: 0 auto;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .heading ul li {
+    width: 80px;
+    line-height: 64px;
   }
 }
 /*# sourceMappingURL=index.css.map */
