@@ -1,4 +1,5 @@
 @import "./reset";
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP');
 
 * {
   box-sizing: border-box;
@@ -34,7 +35,16 @@ body {
     // margin: 0 auto;
     .portfolio {
       text-align: center;
-      font-size: 70px;
+      font-size: 80px;
+      height: 712px;
+      padding: 128px 0;
+      font-weight: bold;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      h1 {
+        font-family: 'Noto Serif JP', sans-serif;
+      }
     }
   }
 }
