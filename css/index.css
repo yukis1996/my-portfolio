@@ -9,6 +9,7 @@
     TODO will need to remove settings on HTML since we can't namespace it.
     TODO with the prefix, should I group by selector or property for weight savings?
 */
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif+JP");
 html {
   color: #000;
   background: #FFF;
@@ -180,7 +181,23 @@ body {
   }
   .content .portfolio {
     text-align: center;
-    font-size: 70px;
+    font-size: 80px;
+    height: 712px;
+    padding: 128px 0;
+    font-weight: bold;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .content .portfolio h1 {
+    font-family: 'Noto Serif JP', sans-serif;
   }
 }
 
