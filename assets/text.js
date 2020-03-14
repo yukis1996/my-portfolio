@@ -15,13 +15,13 @@ $(function () {
     // フェードインのエフェクトの詳細設定
     in: {
       // エフェクトの名前（animate.cssをご参照下さい）
-      effect: 'fadeInLeftBig',
+      effect: 'bounceIn',
   
       // 遅延時間の指数
       delayScale: 1.5,
   
       // 文字ごとの遅延時間
-      delay: 50,
+      delay: 100,
   
       // trueにすることでアニメーションをすべての文字に同時に適用される
       sync: false,
@@ -40,4 +40,24 @@ $(function () {
       shuffle: false,
     }
   });
+  $(".em").textillate({
+    loop: false,
+    minDisplayTime: 2000,
+    initialDelay: 1000,
+    autoStart: true,
+    in: {
+      effect: 'bounceIn',
+      delayScale: 1.5,
+      delay: 100,
+      sync: false,
+      shuffle: false
+    },
+    out: {
+      effect: 'hinge',
+      delayScale: 1.5,
+      delay: 50,
+      sync: false,
+      shuffle: false,
+    }
+  })
 })
